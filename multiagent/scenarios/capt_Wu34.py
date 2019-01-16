@@ -52,7 +52,7 @@ class Scenario(BaseScenario):
             agent.state.p_angle_vel =0
             agent.state.c = np.zeros(world.dim_c)
             agent.color = np.array([0.35, i/10, 0.])
-            agent.max_speed = 0.3
+            agent.max_speed = None
 
         # random properties for landmarks
         landmark_angle = np.random.uniform(0, 2*math.pi, 1)
